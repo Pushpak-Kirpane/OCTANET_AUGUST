@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./wallpaperflare.com_wallpaper.jpg'); 
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: #ff364a;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="datetime-local"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: green;
+}
+
+li button {
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+li .delete-btn {
+    background-color: #dc3545;
+}
+
+li .delete-btn:hover {
+    background-color: #c82333;
+}
+
+li .edit-btn {
+    background-color: #ffc107;
+}
+
+li .edit-btn:hover {
+    background-color: #e0a800;
+}
+
+li .complete-btn {
+    background-color: #007bff;
+}
+
+li .complete-btn:hover {
+    background-color: #0056b3;
+}
+
+.countdown {
+    font-size: 0.9em;
+    color: #ff4b5c;
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .countdown, li button {
+        margin-top: 5px;
+    }
+}
